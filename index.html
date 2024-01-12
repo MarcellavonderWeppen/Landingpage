@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-left">
+          <a href="/index.html"
+            ><img src="/assets/images/logo.png" alt="website logo" />
+          </a>
+        </div>
+        <ul class="navbar-middle">
+          <li><a href="/home">home</a></li>
+          <li><a href="#what_we_do">what we do</a></li>
+          <li><a href="#about">our team</a></li>
+        </ul>
+        <div class="navbar-right">
+          <a href="#contact-us"> <button type="button">contact us!</button></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- HERO SECTION -->
+
+      <section class="hero">
+        <h1>
+          <div class="uppercase">Let professionals</div>
+          <div class="h1-smaller">take care of your business</div>
+        </h1>
+        <p class="yellow-text">
+          Our team of experts and creative professionals will turn your ideas
+          into high-end digital products!
+        </p>
+        <img src="/assets/images/hero.png" alt="" />
+        <p class="yellow-text">
+          Do you struggle to find a reliable partner for your business? We are
+          the partner you have been looking for!
+        </p>
+      </section>
+
+      <!-- What we do SECTION -->
+
+      <section class="what_we_do" id="what_we_do">
+        <h2 class="uppercase">What We Do:</h2>
+        <div class="d-card-container">
+          <div class="d-card">
+            <div class="d-card-image"></div>
+            <div class="d-card-title">Design</div>
+            <div class="d-card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
+              repudiandae dolore veritatis nisi eos delectus
+            </div>
+          </div>
+          <div class="d-card">
+            <div class="d-card-image"></div>
+            <div class="d-card-title">Coding</div>
+            <div class="d-card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
+              repudiandae dolore veritatis nisi eos delectus
+            </div>
+          </div>
+          <div class="d-card">
+            <div class="d-card-image"></div>
+            <div class="d-card-title">Marketing</div>
+            <div class="d-card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
+              repudiandae dolore veritatis nisi eos delectus
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+
+      <section class="about" id="about">
+        <h2 class="uppercase">our team</h2>
+        <div class="card_container">
+          <div class="card">
+            <a href="about-marcella.html">
+              <img
+                class="card-img"
+                src="/assets/images/Marcella.png"
+                alt="Marcella Weppen"
+              />
+              <h4>Marcella Weppen</h4>
+              <h5>Web Developer</h5>
+              <p>⭐️⭐️⭐️⭐️⭐️</p>
+              <p>
+                I had a great experience at the cell phone repair shop. The
+                staff was friendly and knowledgeable, and my phone was fixed
+                quickly and seamlessly.
+              </p>
+            </a>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="./assets/images/Julia.jpg"
+              alt="julia-kraus"
+            />
+            <h4>Julia Kraus</h4>
+            <h5>Super Women</h5>
+            <p>⭐️⭐️⭐️⭐️⭐️</p>
+
+            <p>
+              I had a great experience at the cell phone repair shop. The staff
+              was friendly and knowledgeable, and my phone was fixed quickly and
+              seamlessly.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="/assets/images/Dimi.jpg"
+              alt="Dmitry Dmitrov"
+            />
+            <h4>Dmitry Dmitrov</h4>
+            <h5>Nice Guy</h5>
+            <p>⭐️⭐️⭐️⭐️⭐️</p>
+            <p>
+              The staff was kind and helpful, and the repairs were completed
+              quickly. Overall, I would highly re- commend this place for any
+              cell phone repair needs.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              class="card-img"
+              src="/assets/images/Ati.png"
+              alt="Atefeh Abdolsalami"
+            />
+            <h4>Ati Abdolsalami</h4>
+            <h5>UX/UI Pro</h5>
+            <p>⭐️⭐️⭐️⭐️⭐️</p>
+            <p>
+              Super friendly stuff, great value for the price. It was very easy
+              to find this repair shop. I can recommend it to my friends and
+              family. However, there are some room for...
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+
+      <section class="contact-us" id="contact-us">
+        <h2>
+          <div class="uppercase">Your immediate contact</div>
+          <div class="h1-smaller" style="font-weight: 400">
+            and free initial session
+          </div>
+        </h2>
+        <form action="/submit-form" method="post">
+          <label for="name">Name</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Type a name"
+          /><br />
+
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+          /><br />
+
+          <label for="message">Message</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Message"
+          ></textarea
+          ><br />
+          <input type="submit" value="Send" />
+        </form>
+      </section>
+    </main>
+    <!--     <footer class="footer">
+      <section class="footer_list">
+        <ul>
+          <li>blog</li>
+          <li>terms</li>
+          <li>privacy</li>
+          <li>blog</li>
+        </ul>
+      </section>
+      <section class="newsletter">
+        <form action=""></form>
+        <label for="email">sign in to our newsletter!</label> <br />
+        <input type="email" id="email" />
+      </section>
+    </footer> -->
+  </body>
+</html>

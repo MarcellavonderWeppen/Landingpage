@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #1e1842;
+}
+
+h1 {
+  margin-top: 2em;
+  font-weight: 700;
+  font-size: 64px;
+  text-transform: uppercase;
+}
+
+.h1-smaller,
+h2 {
+  font-size: 3rem;
+  margin-bottom: 2em;
+}
+
+.h1-smaller {
+  font-weight: 400;
+  text-transform: none;
+}
+
+.yellow-text {
+  margin: 1em auto;
+  color: #feff4c;
+  font-size: 1.5em;
+  max-width: 50%;
+  font-weight: 500;
+}
+
+.yellow-text-smaller {
+  font-size: 1em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+section {
+  padding: 1em;
+  padding-bottom: 14rem;
+}
+
+/* Styling for buttons in header & contact section */
+
+button,
+form input[type="submit"] {
+  width: auto;
+  background-color: #8855ff;
+  color: white;
+  font-size: 0.8rem;
+  border: 0;
+  border-radius: 1.8rem;
+  cursor: pointer;
+  padding: 1em 2em;
+}
+
+/* HEADER */
+
+header {
+  background-color: #1e1842;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 86%; /* reconsider width maybe */
+  padding: 1rem;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.navbar-left {
+  width: 10%;
+}
+.navbar-left img {
+  width: 70%;
+}
+.navbar-middle {
+  width: 50%;
+  justify-content: space-around;
+  font-variant: small-caps;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-right {
+  /*   width: 40%; -> causing trouble */
+  justify-content: end;
+}
+
+/* MAIN */
+
+/* Hero */
+
+/* What we do */
+
+.d-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.d-card {
+  width: 250px;
+  height: auto;
+  position: relative;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s ease-in;
+}
+.d-card > * {
+  padding: 10px;
+}
+.d-card .d-card-image {
+  height: 50px;
+  width: 50px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.d-card .d-card-title {
+  padding: 20px 10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-shadow: 1px 0px 2px #262654;
+}
+
+.d-card:nth-child(1) .d-card-image {
+  background-image: url(assets/icons/design.png);
+}
+.d-card:nth-child(2) .d-card-image {
+  background-image: url(assets/icons/coding.png);
+}
+.d-card:nth-child(3) .d-card-image {
+  background-image: url(assets/icons/marketing.png);
+}
+.d-card:hover {
+  background: #8855ff;
+  color: #fff;
+  box-shadow: 0px 0px 11px 5px #000000;
+}
+
+.d-card .d-card-text {
+  line-height: 20px;
+}
+
+/* About */
+
+h4 {
+  font-size: 1.2rem;
+  color: black;
+}
+
+h5 {
+  margin: 0.5em;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 18rem;
+  background-color: white;
+  margin: 0.5em;
+  padding: 2.5em 1.5em;
+  border-radius: 20px;
+}
+.card-img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 2em;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.card p {
+  color: #1e1842;
+  width: 200px;
+}
+
+/* Contact */
+
+.contact-us {
+  background: linear-gradient(to bottom, #1e1842, #65568b);
+}
+
+form {
+  width: 45%; /* Adjust this width as needed */
+  margin: 2em auto;
+  text-align: left;
+}
+
+form input,
+form label,
+form textarea {
+  text-align: left;
+  padding: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: #1e1842;
+  border: 1px white solid;
+  font-size: 1rem;
+  border-radius: 26px;
+}
+
+form label {
+  padding-left: 0;
+  /* Space between label and input/textarea */
+}
+
+form input[type="submit"] {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+
+::placeholder {
+  color: white;
+  padding: 0.5em;
+  font-size: 16px;
+}
+
+/* ABOUT US */
+
+.hi {
+  display: flex;
+  max-width: 90%;
+  margin: 5rem auto;
+  align-items: flex-start;
+}
+
+.hi h1,
+.hi div {
+  margin-top: 0;
+}
+
+.hi h1,
+.hi p {
+  text-align: left;
+}
+
+.hi p {
+  margin: 0;
+  min-width: 100%;
+}
+
+.hi div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 0;
+  align-items: flex-start;
+  margin-left: 5em;
+}
+
+.hi button {
+  align-self: left;
+  margin-top: 3em;
+}
+
+.more-about {
+  display: flex;
+  max-width: 90%;
+  margin: 5rem auto;
+  align-items: flex-start;
+}
+
+.more-about h2,
+.clients h2 {
+  text-align: left;
+}
+
+.more-about div {
+  max-width: 50%;
+}
+
+.more-about .img-box {
+  margin-left: 10em;
+}
+
+.more-about button {
+  margin-right: 4em;
+  min-width: 200px;
+}
+
+.more-about .button-box {
+  display: flex;
+  justify-content: center;
+  margin: 2em auto;
+}
+
+.clients {
+  max-width: 90%;
+  margin: 0 auto;
+}
+/* FOOTER */
